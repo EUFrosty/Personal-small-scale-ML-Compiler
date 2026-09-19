@@ -1,0 +1,10 @@
+ML Compiler Project — Plan.pdf
+
+.venv
+__pycache__/
+*.__pycache__
+
+build/
+
+models/
+artifacts/
