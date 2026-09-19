@@ -7,6 +7,7 @@ import onnx
 from onnx import TensorProto, checker, helper, numpy_helper, shape_inference
 
 OPSET = 17
+IR_VERSION = 13 # onnxruntime 1.30 refuses everything above 13, and onnx 1.23 uses 14 by default if not specified, so we add this as a fix
 SEED = 0
 OUT = Path(__file__).resolve().parents[1] / "models" / "small_convnet.onnx"
 
