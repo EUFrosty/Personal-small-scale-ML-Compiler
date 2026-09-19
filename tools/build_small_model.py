@@ -63,6 +63,7 @@ def main():
     )
 
     model = helper.make_model(graph, opset_imports=[helper.make_opsetid("", OPSET)])
+    model.ir_version = IR_VERSION
     model.producer_name = "mlc-build-small-model"
     model = shape_inference.infer_shapes(model)
     checker.check_model(model, full_check=True)
