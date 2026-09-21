@@ -16,7 +16,7 @@ ALIGN = 64
 
 SUPPORTED_OPS = {
     "Add", "BatchNormalization", "Conv", "Flatten", "Gemm",
-    "GlobalAveragePool", "Identify", "MaxPool", "Relu",
+    "GlobalAveragePool", "Identity", "MaxPool", "Relu",
 }
 
 class Rejected(Exception):
